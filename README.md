@@ -11,4 +11,5 @@ to do:
 *add show/hide done tasks button
 *create custom tasks
 *add styling to stack tasks instead op appending to existing line
+*hoe gaan ek distinguish tussen al my nuwe check boxes
 
