@@ -2,57 +2,34 @@
 <html>
 
 <head>
-<title>What ToDo</title>
+	<title>What ToDo</title>
 </head>
 
 <link rel="stylesheet" href="style.css">
 
 <header>
 	<h1>What ToDO</h1>
-	<p><h2>Keeping all your important to remember tasks in one place<h2></p>
-	<p><h5>On whatToDo you can create and edit multiple to do lists that you can access from any internet connected device<h5></p>
 </header>
 
 <body>
 	<div id = "listName">
-		<h3>ToDoListName</h3>
+		<h3>ToDoListName:</h3>
 	</div>
 	
-	
-	
-	
-	<dev id="toDoList" >
-		<dev id="tasks">
-			<p>Task 1 is quite the long task yadayadayadayada</p>
-			<p>Task 2</p>
-			<p>Task 3</p>
-			<p>Task 4</p>
-			<p>Task 4</p>
-		</dev>
-		
-		<dev id="doneTasks">
-			<p>Done task 1</p>
-			<p>Done task 2</p>
-			<p>Done task 3</p>
-			<p>Done task 4</p>
-		</dev>
-		
-		<dev  id="options">
-		</dev>
+	<dev id="toDoListArea">
 	</dev>
 	
-	<!-- <dev id="formArea"> -->
-	
-		<!-- <p><input type="</p> -->
-		<!-- <textarea rows="1" cols="20" name="addtaskBox">Add task</textarea> -->
-		<!-- <p><input type="button" value ="add" disabled = "true" name = "addButton"></p> -->
-	<!-- </dev> -->
 </body>
 
 <form>
-	
-	
+	<input type="text" id="myText" placeholder="Please enter task">
+	<p><input type="button" value ="add" name = "addButton"onclick = "approve()"></p>
+	<p><input type="button" value ="show/Hide" name = "showHide"onclick = "showOrHide()"></p>
 </form>
-	
-	
+
+<script src="script.js"></script> 
+<script
+		  src="http://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous"></script>
 </html>

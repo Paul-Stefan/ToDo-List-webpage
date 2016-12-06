@@ -3,6 +3,15 @@ ToDo list webpage
 
 WhatToDO: web based to do list for accesing all your important to remember task from any device.
 
-Design the complicated, gaan reduce na net 'n form en 'n show/hide selected tasks button
+Simplified design
 
-Lyk so bietjie soos Mieliestronk.com, maar css is irelevant
+add task button works
+can tick tasks
+show/hide ticked tasks
+
+to do:
+*Styling and formatting
+ 
+Future upgrades:
+*look into using object for list items
+
