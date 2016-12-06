@@ -32,7 +32,7 @@ function showOrHide(){
 		console.log(classNames[i]);
 		checked = ($('.' + classNames[i] + '').prop("checked"));
 		if(checked == true){
-			$('.' + classNames[i] + '').hide();
+			$('.' + classNames[i] + '').toggle();
 		}
 	}
 }
