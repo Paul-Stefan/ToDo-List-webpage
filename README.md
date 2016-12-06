@@ -5,11 +5,13 @@ WhatToDO: web based to do list for accesing all your important to remember task 
 
 Simplified design
 
-add task button works (no custom tasks)
+add task button works
+can tick tasks
+show/hide ticked tasks
 
 to do:
-*add show/hide done tasks button
-*create custom tasks
-*add styling to stack tasks instead op appending to existing line
-*hoe gaan ek distinguish tussen al my nuwe check boxes - some form of textBox.....this(textBox) yadayadayada
+*Styling and formatting
+ 
+Future upgrades:
+*look into using object for list items
 
