@@ -1,6 +1,3 @@
-//console.log(listAreaId);
-//create elements
-
 function createTask(){
 	var listAreaId = document.getElementById("toDoListArea");
 	console.log(listAreaId);
@@ -8,44 +5,14 @@ function createTask(){
 	var newTaskCB = document.createElement("INPUT");
     newTaskCB.setAttribute("type", "checkbox");
     listAreaId.appendChild(newTaskCB);
-	/* //gets taskName from text box
-	var textBoxId = document.getElementByid("taskTextBox");
-	var taskName = textBoxId.getAttribute("value"); */
 	//creates new lable for text box
-	var taskName = "My task";
+	var taskName = document.getElementById("myText").value;
+	//var taskName = textBoxId.getAttribute("value");
+	
 	var taskLable = document.createTextNode(taskName);
 	listAreaId.appendChild(taskLable);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* <!DOCTYPE html>
-<html>
-<body>
-
-<p>Click the button to create a Checkbox.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-    var x = document.createElement("INPUT");
-    x.setAttribute("type", "checkbox");
-    document.body.appendChild(x);
+function approve(){
+	$( document ).ready(createTask());
 }
-</script>
-
-</body>
-</html>
- */
