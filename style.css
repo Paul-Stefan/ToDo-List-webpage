@@ -1,0 +1,25 @@
+h1{
+	text-align:center;
+	background-color:grey;
+	margin:20px;
+	padding:7px;
+}
+
+h3{
+	color:grey;
+	margin:20px;
+	padding:7px;
+	text-align:center;
+
+}
+#toDoListArea > div{
+	color:red;
+	margin:4px;
+	margin-left:20px;
+	padding:4px;
+}
+
+form{
+	margin:15px;
+	padding:7px;
+}

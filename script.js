@@ -2,22 +2,26 @@ var counter = 0;
 var classNames = [];
 
 function createTask(){
-counter ++;
-	var listAreaId = document.getElementById("toDoListArea");
-	//creates checkbox for net task
-	var newTaskCB = document.createElement("INPUT");
-    newTaskCB.setAttribute("type", "checkbox");
-	newTaskCB.setAttribute("class", counter);
-    listAreaId.appendChild(newTaskCB);
-	//creates new lable for text box
-	var taskName = document.getElementById("myText").value;	
-	 //var taskLable = document.createTextNode(taskName);
-	var taskLable = document.createElement("p");
-	taskLable.textContent = taskName;
-	taskLable.setAttribute("class", counter);
-	listAreaId.appendChild(taskLable);
-	
-	classNames.push(counter);
+	//get id for toDo area
+	var ToDoListAreaId = $("#toDoListArea");
+	//console.log(ToDoListAreaId);
+	var lableName = $("#myText").val();
+	//prevent user from submitting empty task
+	if(lableName == ""){
+		alert("Please enter a task before submitting");
+	}else{
+		//create div for each new task
+		$("#toDoListArea").append("<div class =" + counter + "></div>");
+		//create check box and text that each is a child of the dev
+		$("."+counter+"").append("<input type='checkBox', id =cb" + counter + ">");
+		var taskLable = document.createTextNode(lableName);
+		$("."+counter+"").append(taskLable);
+		classNames.push(counter);
+		counter ++;
+		
+		//clear data from checkbox and reset to placeholder
+		$("#myText").attr("placeholder", "Please enter task").val("").focus().blur();
+	}
 }
 
 function approve(){
@@ -25,14 +29,22 @@ function approve(){
 }
 
 function showOrHide(){
+	//initialise variables
 	var arrayLength = classNames.length;
 	var checked;
 	
 	for(var i = 0; i < arrayLength; i++){
-		console.log(classNames[i]);
-		checked = ($('.' + classNames[i] + '').prop("checked"));
+		//console.log(checked = $(".1 > .cb").val());
+		checked = ($('#cb' + classNames[i] + '').prop("checked"));
+		//console.log($('#id' + classNames[i] + ''));
 		if(checked == true){
 			$('.' + classNames[i] + '').toggle();
 		}
 	}
 }
+
+
+
+
+		
+		
